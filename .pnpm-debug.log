@@ -1,0 +1,79 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/liucheng/my-react"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "my-react",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "/Users/liucheng/my-react"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/liucheng/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/liucheng/my-react/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/liucheng/my-react",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 1,
+    "err": {
+      "name": "Error",
+      "message": "GET http://192.168.0.178:8081/repository/npm-group/pnpm: request to http://192.168.0.178:8081/repository/npm-group/pnpm failed, reason: Socket timeout",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET http://192.168.0.178:8081/repository/npm-group/pnpm: request to http://192.168.0.178:8081/repository/npm-group/pnpm failed, reason: Socket timeout\n    at RetryOperation._fn (/opt/homebrew/Cellar/pnpm/6.24.4/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:85384:19)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  },
+  "5 debug pnpm": "Using cached meta from /Users/liucheng/Library/Caches/pnpm/metadata/192.168.0.178+8081/pnpm.json",
+  "6 debug pnpm:update-check": {
+    "currentVersion": "6.24.4",
+    "latestVersion": "7.14.2"
+  },
+  "7 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ERR_SOCKET_TIMEOUT",
+      "code": "ERR_SOCKET_TIMEOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "http://192.168.0.178:8081/repository/npm-group/prettier"
+  },
+  "8 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ERR_SOCKET_TIMEOUT",
+      "code": "ERR_SOCKET_TIMEOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "http://192.168.0.178:8081/repository/npm-group/prettier"
+  },
+  "9 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 1,
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET http://192.168.0.178:8081/repository/npm-group/prettier: request to http://192.168.0.178:8081/repository/npm-group/prettier failed, reason: Socket timeout",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "pnpm: GET http://192.168.0.178:8081/repository/npm-group/prettier: request to http://192.168.0.178:8081/repository/npm-group/prettier failed, reason: Socket timeout\n    at RetryOperation._fn (/opt/homebrew/Cellar/pnpm/6.24.4/libexec/lib/node_modules/pnpm/dist/pnpm.cjs:85384:19)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}
